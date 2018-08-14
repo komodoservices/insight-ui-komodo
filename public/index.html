@@ -6,11 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="fragment" content="!">
-	<title data-ng-if="currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Testnet Insight'">Komodo Explorer</title>
-	<title data-ng-if="!currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Komodo Explorer</title>
-	<meta name="keywords" content="komodo, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
-	<meta data-ng-if="currency.testnet" name="description" content="Komodo Insight. View detailed information on all testnet komodo transactions and block. {{ $root.title + $root.titleDetail }}">
-	<meta data-ng-if="!currency.testnet" name="description" content="Komodo Insight. View detailed information on all komodo transactions and block. {{ $root.title + $root.titleDetail }}">
+	<title data-ng-if="currency.testnet">Testnet Explorer | Komodo Services</title>
+	<title data-ng-if="!currency.testnet">Explorer | Komodo Services</title>
+	<meta name="keywords" content="komodo, kmd, transactions, tx, api, blocks, address, blockchain, reward, mining, difficulty, hash, serialized">
+	<meta data-ng-if="currency.testnet" name="description" content="View detailed information of all testnet komodo transactions.">
+	<meta data-ng-if="!currency.testnet" name="description" content="View detailed information of all Komodo transactions. API available at /api">
 	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
 	<link rel="stylesheet" href="css/main.min.css">
@@ -66,7 +66,7 @@
         <a href="tx/send" translate>broadcast transaction</a>
         ]
       </div>
-      <a class="insight m10v pull-right" target="_blank" href="http://insight.is">insight <small>API v{{version}}</small></a>
+      <a class="insight m10v pull-right" target="_blank" href="https://komodo.services/api/insight">insight <small>API v{{version}}</small></a>
     </div>
   </div>
   <script language="javascript">window.apiPrefix = '/api';</script>
