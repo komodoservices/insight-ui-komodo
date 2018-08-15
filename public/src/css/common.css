@@ -115,7 +115,7 @@ margin-left: 0;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
 
 .navbar-default {
-  background-color: #5FCAFF;
+  background-color: #4A9ACA;
   margin: 0;
   border: 0;
 }
@@ -225,7 +225,7 @@ margin-left: 0;
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #4A9ACA;
+  background-color: #5D5D5D;
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
