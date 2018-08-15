@@ -71,6 +71,10 @@ module.exports = function(grunt) {
       css: {
         src: 'public/css/main.css',
         dest: 'public/css/main.min.css'
+      },
+      common: {
+        src: 'public/src/css/common.css',
+        dest: 'public/css/common.min.css'
       }
     },
     markdown: {
